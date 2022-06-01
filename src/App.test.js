@@ -45,7 +45,7 @@ it('Sign up for the service and render User Registration Confirmation screen', (
   userEvent.click(signUpButton);
 
   // verify page content for expected route
-  const heading = screen.getByRole('heading', { name: /Welcome/i, name: /PRAVEEN KUMAR!/i });
+  const heading = screen.getByRole('heading', { name: /Welcome/i, name: /JAMES BUREN!/i });
   expect(heading).toBeInTheDocument();
 
   const helperText1 = screen.getByText(/You have been registered for this awesome service./i, { selector: 'p' });
